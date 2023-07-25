@@ -1,0 +1,75 @@
+<!-- res/layout/activity_profile.xml -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Profile Picture -->
+    <ImageView
+        android:id="@+id/imageViewProfile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/profilepicture"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Profile Details -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewProfile"
+        android:layout_marginTop="16dp">
+
+        <!-- Name -->
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="John Doe"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true" />
+
+        <!-- Age -->
+        <TextView
+            android:id="@+id/textViewAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewName"
+            android:text="Age: 30"
+            android:textSize="16sp"
+            android:layout_centerHorizontal="true" />
+
+        <!-- Email -->
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewAge"
+            android:text="Email: johndoe@example.com"
+            android:textSize="16sp"
+            android:layout_centerHorizontal="true" />
+
+        <!-- Phone Number -->
+        <TextView
+            android:id="@+id/textViewPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewEmail"
+            android:text="Phone: +1234567890"
+            android:textSize="16sp"
+            android:layout_centerHorizontal="true" />
+
+        <!-- Address -->
+        <TextView
+            android:id="@+id/textViewAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewPhoneNumber"
+            android:text="Address: 123 Main St, City, Country"
+            android:textSize="16sp"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</RelativeLayout>
